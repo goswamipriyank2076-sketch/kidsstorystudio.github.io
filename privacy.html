@@ -1,15 +1,105 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Privacy Policy - Kids Story Studio</title>
-<style>body{font-family:system-ui,sans-serif;max-width:680px;margin:40px auto;padding:0 16px;line-height:1.6;color:#222}a{color:#0a58ca}</style>
-</head><body>
-<h1>Privacy Policy</h1>
-<p>Kids Story Studio is a personal tool used only by the channel owner to upload videos to their own YouTube channel through the YouTube Data API.</p>
-<ul>
-<li>It requests only the <code>youtube.upload</code> permission.</li>
-<li>It does not collect, store, sell or share any personal data of viewers or any other users.</li>
-<li>The access token is stored only on the owner's private computer and can be revoked at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
-<li>This app uses YouTube API Services. See the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
-</ul>
-<p>Contact: goswamipriyank2076@gmail.com</p>
-</body></html>
+<meta name="description" content="Privacy Policy for Kids Story Studio, the upload tool of the Nanhi Nagariya channel.">
+<link rel="icon" href="logo.png">
+<style>
+:root{--bg:#fffaf0;--card:#ffffff;--text:#2b2b2b;--muted:#5f5f5f;--accent:#e8590c;--link:#0a58ca;--border:#f1e3c8}
+@media (prefers-color-scheme:dark){:root{--bg:#1c1a17;--card:#26231f;--text:#eee;--muted:#b5b0a8;--accent:#ffa94d;--link:#74b0ff;--border:#3a352e}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}
+main{max-width:720px;margin:0 auto;padding:32px 16px 48px}
+header{text-align:center}
+header a.home{display:inline-block}
+header img{width:96px;height:96px}
+h1{margin:8px 0 0;font-size:2rem;color:var(--accent)}
+.updated{margin:0;color:var(--muted);font-size:.9rem}
+.intro{margin-top:24px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:6px 18px;margin-top:14px}
+h2{font-size:1.1rem;margin:12px 0 4px}
+.card p,.card ul{margin:4px 0 12px}
+ul{padding-left:20px}
+li{margin:4px 0}
+code{background:var(--border);border-radius:4px;padding:1px 5px;font-size:.88em}
+a{color:var(--accent);font-weight:600;text-decoration:none;border-bottom:2px dotted currentColor}
+a:hover{border-bottom-style:solid}
+header a.home{border:0}
+.links{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.links li{margin:0}
+.links a,.mail,.back{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:6px 14px;background:var(--bg);transition:transform .15s,background .15s}
+.links a:hover,.mail:hover,.back:hover{transform:translateY(-2px);background:var(--border);border-bottom-style:solid}
+.mail{margin:6px 0 10px}
+.back{margin-top:24px}
+footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:.9rem;text-align:center}
+/* animations */
+header img{animation:bob 3s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-6px) rotate(-3deg)}}
+header h1,header .updated{animation:pop .6s ease-out both}
+header .updated{animation-delay:.15s}
+@keyframes pop{from{opacity:0;transform:scale(.85)}to{opacity:1;transform:scale(1)}}
+.card{animation:rise .5s ease-out both}
+.card:nth-of-type(1){animation-delay:.25s}.card:nth-of-type(2){animation-delay:.35s}
+.card:nth-of-type(3){animation-delay:.45s}.card:nth-of-type(4){animation-delay:.55s}
+.card:nth-of-type(5){animation-delay:.65s}.card:nth-of-type(6){animation-delay:.75s}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head><body><main>
+
+<header>
+  <a class="home" href="index.html"><img src="logo.png" alt="Nanhi Nagariya logo"></a>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: 22 November 2026</p>
+</header>
+
+<p class="intro">Kids Story Studio is a personal tool used only by the owner of the <b>Nanhi Nagariya</b> channel. It uploads the channel's own videos to the owner's own YouTube channel and Instagram account. It has no other users.</p>
+
+<div class="card">
+  <h2>What data we collect</h2>
+  <p>None. The app does not collect, store, sell or share any personal data of viewers or anyone else.</p>
+</div>
+
+<div class="card">
+  <h2>Permissions used</h2>
+  <ul>
+    <li><b>YouTube:</b> only <code>youtube.upload</code>, to upload videos to the owner's channel.</li>
+    <li><b>Instagram:</b> only what is needed to publish Reels to the owner's account: <code>instagram_basic</code>, <code>instagram_content_publish</code> and <code>pages_show_list</code>.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>Where access tokens are kept</h2>
+  <p>Access tokens are stored only on the owner's private computer and in private GitHub secrets. Access can be removed at any time:</p>
+  <ul>
+    <li>Google: <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a></li>
+    <li>Meta: Facebook Settings &rarr; Business Integrations</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>Data deletion</h2>
+  <p>The app stores no user data. For any question about data, email us at the address below and we will reply within 7 days.</p>
+</div>
+
+<div class="card">
+  <h2>Third-party services</h2>
+  <p>This app uses YouTube API Services and the Meta Instagram Graph API. Please also see:</p>
+  <ul class="links">
+    <li><a href="https://www.youtube.com/t/terms">▶ YouTube Terms of Service</a></li>
+    <li><a href="https://policies.google.com/privacy">🔒 Google Privacy Policy</a></li>
+    <li><a href="https://www.facebook.com/privacy/policy">🔒 Meta Privacy Policy</a></li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>Contact</h2>
+  <a class="mail" href="mailto:goswamipriyank2076@gmail.com">✉️ goswamipriyank2076@gmail.com</a>
+</div>
+
+<a class="back" href="index.html">&larr; Back to home</a>
+
+<footer>
+  <p>© 2026 Nanhi Nagariya</p>
+</footer>
+
+</main></body></html>
