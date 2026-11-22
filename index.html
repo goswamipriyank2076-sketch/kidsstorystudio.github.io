@@ -1,10 +1,79 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Kids Story Studio</title>
-<style>body{font-family:system-ui,sans-serif;max-width:680px;margin:40px auto;padding:0 16px;line-height:1.6;color:#222}a{color:#0a58ca}</style>
-</head><body>
-<h1>Kids Story Studio</h1>
-<p>Short Hindi cartoon moral stories for children.</p>
-<p>Kids Story Studio is a personal tool used only by the channel owner to upload these videos to their own YouTube channel using the YouTube Data API.</p>
-<p><a href="privacy.html">Privacy Policy</a></p>
-</body></html>
+<title>Nanhi Nagariya - Kids Story Studio</title>
+<meta name="description" content="Nanhi Nagariya: short Hindi cartoon moral stories, fun facts and rhymes for children aged 4-10.">
+<link rel="icon" href="logo.png">
+<style>
+:root{--bg:#fffaf0;--card:#ffffff;--text:#2b2b2b;--muted:#5f5f5f;--accent:#e8590c;--link:#0a58ca;--border:#f1e3c8}
+@media (prefers-color-scheme:dark){:root{--bg:#1c1a17;--card:#26231f;--text:#eee;--muted:#b5b0a8;--accent:#ffa94d;--link:#74b0ff;--border:#3a352e}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}
+main{max-width:720px;margin:0 auto;padding:32px 16px 48px}
+header{text-align:center}
+header img{width:150px;height:150px}
+h1{margin:10px 0 0;font-size:2rem;color:var(--accent)}
+.hi{margin:0;font-size:1.1rem;color:var(--accent)}
+.tag{margin:6px 0 0;color:var(--muted)}
+h2{font-size:1.2rem;margin:32px 0 10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 16px}
+.card b{display:block;margin-bottom:4px}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+ul{padding-left:20px}
+a{color:var(--accent);font-weight:600;text-decoration:none;border-bottom:2px dotted currentColor}
+a:hover{border-bottom-style:solid}
+/* animations */
+header img{animation:bob 3s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-8px) rotate(-3deg)}}
+header h1,header .hi,header .tag{animation:pop .6s ease-out both}
+header .hi{animation-delay:.15s}header .tag{animation-delay:.3s}
+@keyframes pop{from{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}
+.card{animation:rise .5s ease-out both;transition:transform .2s,box-shadow .2s}
+.card:nth-child(1){animation-delay:.4s}.card:nth-child(2){animation-delay:.5s}
+.card:nth-child(3){animation-delay:.6s}.card:nth-child(4){animation-delay:.7s}
+.card:hover{transform:translateY(-4px) rotate(-1deg);box-shadow:0 6px 16px rgba(0,0,0,.08)}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:.9rem;text-align:center}
+</style>
+</head><body><main>
+
+<header>
+  <img src="logo.png" alt="Nanhi Nagariya logo">
+  <h1>Nanhi Nagariya</h1>
+  <p class="hi">नन्ही नगरिया</p>
+  <p class="tag">Hindi cartoon stories, fun facts and rhymes for kids</p>
+</header>
+
+<h2>About the channel</h2>
+<p>Nanhi Nagariya is a Hindi channel for children aged 4 to 10 and their parents. Each video is a short animated story told in simple words, the way a grandparent would tell it, and ends with a moral lesson.</p>
+<p>Kids can meet the same friends again and again in new adventures: Chhotu Chooza, Gopi Bakri, Bunty Bhalu and Riya Khargosh.</p>
+
+<div class="grid">
+  <div class="card"><b>Moral stories</b><p>Short naitik kahaniyan about honesty, sharing, kindness and courage.</p></div>
+  <div class="card"><b>Gyan &amp; fun facts</b><p>Easy, true facts about animals, nature and the world around us.</p></div>
+  <div class="card"><b>Bal geet</b><p>Original rhymes and songs that kids can sing along to.</p></div>
+  <div class="card"><b>Longer stories</b><p>Bedtime-length stories and weekly collections of the week's shorts.</p></div>
+</div>
+
+<h2>Safe for kids</h2>
+<ul>
+  <li>No scary, violent or unsuitable content.</li>
+  <li>Simple Hindi that young children can understand.</li>
+  <li>Every story ends with a good lesson.</li>
+</ul>
+
+<h2>About this app (Kids Story Studio)</h2>
+<p>Kids Story Studio is a private tool used only by the owner of Nanhi Nagariya. It publishes the channel's own videos to the owner's own accounts:</p>
+<ul>
+  <li><b>YouTube</b>, through the YouTube Data API</li>
+  <li><b>Instagram</b> (Reels), through the Instagram Graph API</li>
+</ul>
+<p>The app has no public users. It does not collect any data from viewers or anyone else. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+
+<footer>
+  <p><a href="privacy.html">Privacy Policy</a> · Contact: <a href="mailto:goswamipriyank2076@gmail.com">goswamipriyank2076@gmail.com</a></p>
+  <p>© 2026 Nanhi Nagariya</p>
+</footer>
+
+</main></body></html>
